@@ -1,0 +1,15 @@
+; $id$
+name = VITRUD
+description = Easy theme with fixed width, two columns
+core = 7.x
+
+; REGIONS
+;---------------------------------
+regions[content] = Content
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[footer] = Footer
+
+; STYLESHEETS
+;---------------------------------
+stylesheets[all][] = style.css
