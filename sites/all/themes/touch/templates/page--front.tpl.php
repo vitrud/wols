@@ -68,28 +68,28 @@
 <div class="wrapper">
     <!--Header (start)-->
     <header class="header clearfix">
-      
+
         <!--start logo-->
         <?php if ($logo): ?>
-            <a class='header__logo' href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-                <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-            </a>
+        <a class='header__logo' href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
+        </a>
         <?php endif; ?>
         <!--end logo-->
 
         <?php if ($page['search_box']): ?>
-            <!-- / start search box region -->
-            <div class="header__search">
-                <?php print render($page['search_box']); ?>
-            </div>
-            <!-- / end search box region -->
+        <!-- / start search box region -->
+        <div class="header__search">
+            <?php print render($page['search_box']); ?>
+        </div>
+        <!-- / end search box region -->
         <?php endif; ?>
-        
+
         <!-- <?php print render($page['header']); ?> -->
         <nav class="main-menu">
-            <?php 
-                $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu')); 
-                print drupal_render($main_menu_tree);
+            <?php
+            $main_menu_tree = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
+            print drupal_render($main_menu_tree);
             ?>
         </nav>
     </header>
@@ -99,65 +99,76 @@
 <div class="wrapper wrapper_type_slider">
     <!-- Slider (begin) -->
     <div class="slideshow">
-        <!--<?php if ($is_front ):?>  -->
+    <!--<?php if ($is_front): ?>  -->
 
-            <div class='slideshow__banners my_toggle'>
-                <a class='my_toggle__elem my_toggle__elem-vis-yes' href="http://wols.com.ua/content/11">
-                    <img class="slideshow__banners-images-big slideshow__banners-images-big_visibility_yes" src="http://wols.com.ua/sites/default/files//baner/1_1_banner.jpg">
+        <div class='slideshow__banners my_toggle'>
+            <a class='my_toggle__elem my_toggle__elem-vis-yes' href="http://wols.com.ua/content/11">
+                <img class="slideshow__banners-images-big slideshow__banners-images-big_visibility_yes" src="sites/default/files/baner/1_1_banner.jpg">
+            </a>
+
+            <a class='my_toggle__elem' href="http://wols.com.ua/welcome">
+                <img class="slideshow__banners-images-big" src="sites/all/main_baner/welcome.jpg">
+            </a>
+
+            <a class='my_toggle__elem' href="http://wols.com.ua/events">
+                <img class="slideshow__banners-images-big" src="sites/all/main_baner/prayer.jpg">
+            </a>
+
+            <a class='my_toggle__elem' href="http://wols.com.ua/events">
+                <img class="slideshow__banners-images-big" src="sites/all/main_baner/camp_childrens_simf.jpg">
+            </a>
+        </div
+       ><div class="scroller" id="viewPort">
+
+            <div class="scroller__banners" id="content_banner">
+
+                <a href="media/sermon_series/dream_to_mission">
+                    <img src="sites/all/baner/dream_to_mission.jpg" width="236" height="93" class="slider">
                 </a>
 
-                <a class='my_toggle__elem' href="http://wols.com.ua/welcome">
-                    <img class="slideshow__banners-images-big" src="http://wols.com.ua/sites/all/main_baner/welcome.jpg">
+                <a href="media/sermon_series/law_good">
+                    <img src="sites/all/baner/law_good.jpg" width="236" height="93" class="slider">
                 </a>
 
-                <a class='my_toggle__elem' href="http://wols.com.ua/events">
-                    <img class="slideshow__banners-images-big" src="http://wols.com.ua/sites/all/main_baner/prayer.jpg">
+                <a href="media/sermon_series/one-life">
+                    <img src="sites/all/baner/1life.jpg" width="236" height="93" class="slider">
                 </a>
-				
-				<a class='my_toggle__elem' href="http://wols.com.ua/events">
-                    <img class="slideshow__banners-images-big" src="http://wols.com.ua/sites/all/main_baner/camp_childrens_simf.jpg">
+
+                <a href="media/sermon_series/key">
+                    <img src="sites/all/baner/key.jpg" width="236" height="93" class="slider">
                 </a>
-            </div
 
-           ><div class="scroller" id="viewPort">
+                <a href="media/sermon_series/secrets">
+                    <img src="sites/all/baner/secret.jpg" width="236" height="93" class="slider">
+                </a>
 
-                <div class="scroller__banners" id="content_banner">
-
-                    <a href="media/sermon_series/dream_to_mission"><img src="/sites/all/baner/dream_to_mission.jpg" width="236" height="93" class="slider"></a>
-
-                    <a href="media/sermon_series/law_good"><img src="/sites/all/baner/law_good.jpg" width="236" height="93" class="slider"></a>
-
-                    <a href="media/sermon_series/one-life"><img src="/sites/all/baner/1life.jpg" width="236" height="93" class="slider"></a>
-
-                    <a href="media/sermon_series/key"><img src="/sites/all/baner/key.jpg" width="236"  height="93" class="slider"></a>
-
-                    <a href="media/sermon_series/secrets"><img src="/sites/all/baner/secret.jpg" width="236"  height="93" class="slider"></a>
-
-                    <a href="media/sermon_series/360"><img src="/sites/all/baner/360.jpg" width="236"  height="93" class="slider"></a>
-
-                </div>
-
-                <div class='arrow'>
-
-                    <img src="http://wols.com.ua/sites/all/baner/arrow.png" alt="next">
-
-                </div>
+                <a href="media/sermon_series/360">
+                    <img src="sites/all/baner/360.jpg" width="236" height="93" class="slider">
+                </a>
 
             </div>
 
-            <script>
-                var toggleBanners = new FadeToggle({
-                    wrapper: 'my_toggle',
-                    elem: '__elem',
-                    onMod: '-vis-yes'
-                });
+            <div class='arrow'>
 
-                var scrollBanners = new MyScroller({
-                    wrapper: 'scroller__banners',
-                    elem: 'slider',
-                    elemHeight: 93
-                });
-            </script>
+                <img src="http://wols.com.ua/sites/all/baner/arrow.png" alt="next">
+
+            </div>
+
+        </div>
+
+        <script>
+//            var toggleBanners = new FadeToggle({
+//                wrapper:'my_toggle',
+//                elem:'__elem',
+//                onMod:'-vis-yes'
+//            });
+//
+//            var scrollBanners = new MyScroller({
+//                wrapper:'scroller__banners',
+//                elem:'slider',
+//                elemHeight:93
+//            });
+        </script>
 
         <!-- <?php endif; ?> -->
     </div>
@@ -169,34 +180,41 @@
     <div class="main">
         <section class="main__content" role="main">
 
-            <h2 class="block-header">
-                Последние новости
-            </h2>
-            <?php print render($page['content']); ?>
+            <aside class="content__aside">
+                <?php print render($page['sidebar_first']); ?>
 
-        </section>
+                <h2 class="block-header">
+                    Служения
+                </h2>
 
-        <aside class="main__aside">
-		    <div class="service" ><a href="http://aleksandrshevchenko.org/calendar/summer-tour-in-ukrainian-cities" target="_blank"><img src="http://aleksandrshevchenko.org/modules/mod_image_show_gk4/cache/banners.ua-tour-2012-3gk-is-354.png" 
-  width="270" height="105" alt="lorem"></a></div>
-            <?php print render($page['sidebar_first']); ?>
+                <div class="service">
+                    <p>
+                        <strong>Воскресенье</strong><br/>
+                        <span class="service__time">12:00 - Богослужение</span><br/>
+                        <strong>Понедельник</strong><br/>
+                        <span class="service__time">18:00 - Молитвенное Богослужение</span><br/>
+                        <span class="service__time">18:00 - Библейская школа</span><br/>
+                        <strong>Вторник</strong><br/>
+                        <span class="service__time">16:00 - Служение «Золотой век»</span><br/>
+                        <span class="service__time">18:00 - Библейская школа</span><br/>
+                        <strong>Среда</strong><br/>
+                        <span class="service__time">18:00 - Семейный курс</span><br/>
+                    </p>
+                </div>
+            </aside
+           ><article class="content__article">
+                <h2 class="block-header">
+                    Последние новости
+                </h2>
+                <?php print render($page['content']); ?>
+            </article>
 
-            <h2 class="block-header">
-                Служения
-            </h2>
-            <div class="service" >
-                <p>
-                    <strong>Воскресенье</strong><br />
-                    <span class="service__time">12:00 - Богослужение</span><br />
-                    <strong>Понедельник</strong><br />
-                    <span class="service__time">18:00 - Молитвенное Богослужение</span><br />
-                    <span class="service__time">18:00 - Библейская школа</span><br />
-                    <strong>Вторник</strong><br />
-                    <span class="service__time">16:00 - Служение «Золотой век»</span><br />
-                    <span class="service__time">18:00 - Библейская школа</span><br />
-                    <strong>Среда</strong><br />
-                    <span class="service__time">18:00 - Семейный курс</span><br />
-                </p>
+        </section
+       ><aside class="main__aside">
+            <div class="service">
+                <a href="http://aleksandrshevchenko.org/calendar/summer-tour-in-ukrainian-cities" target="_blank">
+                    <img src="http://aleksandrshevchenko.org/modules/mod_image_show_gk4/cache/banners.ua-tour-2012-3gk-is-354.png" width="270" height="105" alt="Summer tour">
+                </a>
             </div>
         </aside>
     </div>
