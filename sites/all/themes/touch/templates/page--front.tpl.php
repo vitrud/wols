@@ -157,17 +157,17 @@
         </div>
 
         <script>
-//            var toggleBanners = new FadeToggle({
-//                wrapper:'my_toggle',
-//                elem:'__elem',
-//                onMod:'-vis-yes'
-//            });
-//
-//            var scrollBanners = new MyScroller({
-//                wrapper:'scroller__banners',
-//                elem:'slider',
-//                elemHeight:93
-//            });
+            var toggleBanners = new FadeToggle({
+                wrapper:'my_toggle',
+                elem:'__elem',
+                onMod:'-vis-yes'
+            });
+
+            var scrollBanners = new MyScroller({
+                wrapper:'scroller__banners',
+                elem:'slider',
+                elemHeight:93
+            });
         </script>
 
         <!-- <?php endif; ?> -->
