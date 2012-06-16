@@ -107,15 +107,15 @@
             </a>
 
             <a class='my_toggle__elem' href="http://wols.com.ua/welcome">
-                <img class="slideshow__banners-images-big" src="sites/all/main_baner/welcome.jpg">
+                <img class="slideshow__banners-images-big" src="sites/default/files/main_baner/welcome.jpg">
             </a>
 
             <a class='my_toggle__elem' href="http://wols.com.ua/events">
-                <img class="slideshow__banners-images-big" src="sites/all/main_baner/prayer.jpg">
+                <img class="slideshow__banners-images-big" src="sites/default/files/main_baner/prayer.jpg">
             </a>
 
             <a class='my_toggle__elem' href="http://wols.com.ua/events">
-                <img class="slideshow__banners-images-big" src="sites/all/main_baner/camp_childrens_simf.jpg">
+                <img class="slideshow__banners-images-big" src="sites/default/files/main_baner/camp_childrens_simf.jpg">
             </a>
         </div
        ><div class="scroller" id="viewPort">
@@ -123,34 +123,34 @@
             <div class="scroller__banners" id="content_banner">
 
                 <a href="media/sermon_series/dream_to_mission">
-                    <img src="sites/all/baner/dream_to_mission.jpg" width="236" height="93" class="slider">
+                    <img src="sites/default/files/baner/dream_to_mission.jpg" width="236" height="93" class="slider">
                 </a>
 
                 <a href="media/sermon_series/law_good">
-                    <img src="sites/all/baner/law_good.jpg" width="236" height="93" class="slider">
+                    <img src="sites/default/files/baner/law_good.jpg" width="236" height="93" class="slider">
                 </a>
 
                 <a href="media/sermon_series/one-life">
-                    <img src="sites/all/baner/1life.jpg" width="236" height="93" class="slider">
+                    <img src="sites/default/files/baner/1life.jpg" width="236" height="93" class="slider">
                 </a>
 
                 <a href="media/sermon_series/key">
-                    <img src="sites/all/baner/key.jpg" width="236" height="93" class="slider">
+                    <img src="sites/default/files/baner/key.jpg" width="236" height="93" class="slider">
                 </a>
 
                 <a href="media/sermon_series/secrets">
-                    <img src="sites/all/baner/secret.jpg" width="236" height="93" class="slider">
+                    <img src="sites/default/files/baner/secret.jpg" width="236" height="93" class="slider">
                 </a>
 
                 <a href="media/sermon_series/360">
-                    <img src="sites/all/baner/360.jpg" width="236" height="93" class="slider">
+                    <img src="sites/default/files/baner/360.jpg" width="236" height="93" class="slider">
                 </a>
 
             </div>
 
             <div class='arrow'>
 
-                <img src="http://wols.com.ua/sites/all/baner/arrow.png" alt="next">
+                <img src="sites/default/files/baner/arrow.png" alt="next">
 
             </div>
 
@@ -184,7 +184,7 @@
                 <?php print render($page['sidebar_first']); ?>
 
                 <h2 class="block-header">
-                    Служения
+                    Расписание собраний
                 </h2>
 
                 <div class="service">
@@ -204,7 +204,7 @@
             </aside
            ><article class="content__article">
                 <h2 class="block-header">
-                    Последние новости
+                    Последняя проповедь
                 </h2>
                 <?php print render($page['content']); ?>
             </article>
@@ -212,9 +212,15 @@
         </section
        ><aside class="main__aside">
             <div class="service">
-                <a href="http://aleksandrshevchenko.org/calendar/summer-tour-in-ukrainian-cities" target="_blank">
-                    <img src="http://aleksandrshevchenko.org/modules/mod_image_show_gk4/cache/banners.ua-tour-2012-3gk-is-354.png" width="270" height="105" alt="Summer tour">
-                </a>
+                <div class="servise__banners-wrapper">
+                    <a class="servise__banner" href="http://aleksandrshevchenko.org/calendar/summer-tour-in-ukrainian-cities" target="_blank">
+                        <img src="http://aleksandrshevchenko.org/modules/mod_image_show_gk4/cache/banners.ua-tour-2012-3gk-is-354.png" width="270" height="105" alt="Summer tour">
+                    </a>
+
+                    <a class="servise__banner" href="http://www.youtube.com/user/melitopolwl">
+                        <img src="sites/default/files/baner/youtube-logo.png" alt="YouTube" width="199" height="79" >
+                    </a>
+                </div>
             </div>
         </aside>
     </div>

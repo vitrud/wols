@@ -537,6 +537,8 @@
 
             width: 30%;
 
+            text-align: center;
+
             background: #e7e7e7;
             -webkit-box-shadow:inset 2px 0px 6px #b2b2b2;
             -moz-box-shadow:inset 2px 0px 6px #b2b2b2;
@@ -573,6 +575,17 @@
         .service__time
         {
             margin-left: 1.7em;
+        }
+
+        .servise__banner
+        {
+            display: inline-block;
+            margin-bottom: 1em;
+        }
+
+        .servise__banners-wrapper
+        {
+            margin-top: 3.3em;
         }
     /* Service (end) */ /**/
 
