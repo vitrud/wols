@@ -148,11 +148,11 @@
 
             </div>
 
-            <div class='arrow'>
-
-                <img src="sites/default/files/baner/arrow.png" alt="next">
-
-            </div>
+<!--            <div class='arrow'>-->
+<!---->
+<!--                <img src="sites/default/files/baner/arrow.png" alt="next">-->
+<!---->
+<!--            </div>-->
 
         </div>
 
@@ -211,16 +211,23 @@
 
         </section
        ><aside class="main__aside">
-            <div class="service">
-                <div class="servise__banners-wrapper">
-                    <a class="servise__banner" href="http://aleksandrshevchenko.org/calendar/summer-tour-in-ukrainian-cities" target="_blank">
-                        <img src="http://aleksandrshevchenko.org/modules/mod_image_show_gk4/cache/banners.ua-tour-2012-3gk-is-354.png" width="270" height="105" alt="Summer tour">
-                    </a>
-
-                    <a class="servise__banner" href="http://www.youtube.com/user/melitopolwl">
-                        <img src="sites/default/files/baner/youtube-logo.png" alt="YouTube" width="199" height="79" >
-                    </a>
+            <div class="rcol">
+                <div class="rcol__video">
+                    <iframe width="300" height="169" src="http://www.youtube.com/embed/W6eObOU9b0U" frameborder="0" allowfullscreen></iframe>
                 </div>
+
+                <div class="rcol__video">
+                    <iframe width="300" height="169" src="http://www.youtube.com/embed/4VdtybN3ovU" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <a class="rcol__banner" href="http://aleksandrshevchenko.org/calendar/summer-tour-in-ukrainian-cities" target="_blank">
+                    <img src="http://aleksandrshevchenko.org/modules/mod_image_show_gk4/cache/banners.ua-tour-2012-3gk-is-354.png" width="270" height="105" alt="Summer tour">
+                </a>
+
+                <a class="rcol__banner" href="http://www.youtube.com/user/melitopolwl">
+                    <img src="sites/default/files/baner/youtube-logo.png" alt="YouTube" width="199" height="79" >
+                </a>
+
             </div>
         </aside>
     </div>

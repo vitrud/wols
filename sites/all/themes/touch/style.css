@@ -569,25 +569,34 @@
         {
             width: 90%;
             margin: 0 auto 10px;
-            padding:5px 10px 5px 10px;
+            padding:0 10px 5px 10px;
         }
 
         .service__time
         {
             margin-left: 1.7em;
         }
+    /* Service (end) */ /**/
 
-        .servise__banner
+    /* Right col (begin) */ /**/
+        .rcol
+        {
+            width: 90%;
+            margin: 0 auto 10px;
+            padding:50px 10px 5px 10px;
+        }
+
+        .rcol__banner
         {
             display: inline-block;
-            margin-bottom: 1em;
+            margin-bottom: 2em;
         }
 
-        .servise__banners-wrapper
+        .rcol__video
         {
-            margin-top: 3.3em;
+            padding-bottom: 2em;
         }
-    /* Service (end) */ /**/
+    /* Right col (end) */ /**/
 
     /* Events (begin) */ /**/
         .events
