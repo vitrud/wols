@@ -107,15 +107,15 @@
             </a>
 
             <a class='my_toggle__elem' href="http://wols.com.ua/welcome">
-                <img class="slideshow__banners-images-big" src="sites/default/files/main_baner/welcome.jpg">
+                <img class="slideshow__banners-images-big" src="sites/default/files/baner/welcome.jpg">
             </a>
 
             <a class='my_toggle__elem' href="http://wols.com.ua/events">
-                <img class="slideshow__banners-images-big" src="sites/default/files/main_baner/prayer.jpg">
+                <img class="slideshow__banners-images-big" src="sites/default/files/baner/prayer.jpg">
             </a>
 
             <a class='my_toggle__elem' href="http://wols.com.ua/events">
-                <img class="slideshow__banners-images-big" src="sites/default/files/main_baner/camp_childrens_simf.jpg">
+                <img class="slideshow__banners-images-big" src="sites/default/files/baner/camp_childrens_simf.jpg">
             </a>
         </div
        ><div class="scroller" id="viewPort">
